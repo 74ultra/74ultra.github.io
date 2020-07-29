@@ -18,9 +18,10 @@
             </div>
             <div class="rules">
                 <p>In the Game of Life, these rules examine each cell of the grid. For each cell, it counts that cell's
-                    neighbors, and then act on that result.</p>
+                    neighbors, and then acts on that result.</p>
                 <p>1. If the cell is alive and has two or three neighbors, then it remains alive. Else it dies.</p>
-                <p>2. If the cell is dead and has exactly three neighbors, then it comes to life. Else if remains dead.
+                <p>2. If the cell is dead and has exactly three neighbors, then it comes to life. Otherwise it remains
+                    dead.
                 </p>
             </div>
             <div class="close-btn-ctn">
@@ -76,11 +77,13 @@
         </div>
     </div>
 
-
+    <script src="main/stateViewHelpers.js"></script>
+    <script src="main/boardSetup.js"></script>
+    <script src="main/buttonSetup.js"></script>
     <script src="main/patterns.js"></script>
-    <script src="main/dropDown.js"></script>
-    <script src="main/modal.js"></script>
-    <script src="main/gameOfLife.js"></script>
+    <script src="main/gridSizeDropdwn.js"></script>
+    <script src="main/rulesModal.js"></script>
+    <script src="main/main.js"></script>
 
 
 </body>
