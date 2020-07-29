@@ -1,4 +1,4 @@
-// pattern buttons
+// pattern button handlers
 function randomBtnHandler() {
     if (playing) {
         return

@@ -3,7 +3,7 @@ const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('#close-btn');
 const backdrop = document.querySelector('.backdrop');
 
-function btnSetup() {
+function modalSetup() {
     closeBtn.addEventListener('click', closeModal)
     openBtn.addEventListener('click', openModal)
     backdrop.addEventListener('click', closeModal)
