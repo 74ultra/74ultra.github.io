@@ -58,3 +58,39 @@ function pentaButtonHandler() {
     fillPattern(rowAry, colAry);
     updateView()
 }
+
+// Create exploder pattern
+function exploderButtonHandler() {
+    if (playing) {
+        return
+    }
+    clearButtonHandler()
+    const rowAry = [8, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 12];
+    const colAry = [10, 12, 14, 10, 14, 10, 14, 10, 14, 10, 12, 14];
+    fillPattern(rowAry, colAry);
+    updateView()
+}
+
+// create spaceship pattern
+function spaceButtonHandler() {
+    if (playing) {
+        return
+    }
+    clearButtonHandler()
+    const rowAry = [7, 7, 7, 7, 8, 8, 9, 10, 10];
+    const colAry = [9, 10, 11, 12, 8, 12, 12, 8, 11];
+    fillPattern(rowAry, colAry);
+    updateView()
+}
+
+// create tumbler pattern
+function tumblerButtonHandler() {
+    if (playing) {
+        return
+    }
+    clearButtonHandler()
+    const rowAry = [6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 11, 11, 11, 11];
+    const colAry = [11, 12, 14, 15, 11, 12, 14, 15, 12, 14, 10, 12, 14, 16, 10, 12, 14, 16, 10, 11, 15, 16];
+    fillPattern(rowAry, colAry);
+    updateView()
+}

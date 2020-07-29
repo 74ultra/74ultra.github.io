@@ -31,6 +31,7 @@ function createTable() {
     gridContainer.appendChild(table)
 }
 
+// Toggles the 'live' / 'dead' class on the grid cells
 function cellClickHandler() {
     if (playing) {
         return
