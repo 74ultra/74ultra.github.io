@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Conway's Game of Life</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/dropdown.css">
+</head>
+
+<body>
+    <div class="backdrop">
+        <div class="modal">
+            <div class="heading">
+                <p id="header">Rules for Conways Game of Life</p>
+            </div>
+            <div class="rules">
+                <p>In the Game of Life, these rules examine each cell of the grid. For each cell, it counts that cell's
+                    neighbors, and then act on that result.</p>
+                <p>1. If the cell is alive and has two or three neighbors, then it remains alive. Else it dies.</p>
+                <p>2. If the cell is dead and has exactly three neighbors, then it comes to life. Else if remains dead.
+                </p>
+            </div>
+            <div class="close-btn-ctn">
+                <button id='close-btn'>Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="header-container">
+        <p id="page-title">Conway's Game of Life</p>
+        <div id="gen-counter">
+            <p id="gen-title">Generation:</p>
+            <p id="gen-num">0</p>
+        </div>
+    </div>
+    <div class='main-ctn'>
+        <div class='left-ctn'>
+            <div class="btn-container">
+                <p>Controls</p>
+                <button class='controls' id="start">start &#10148;</button>
+                <button class='controls' id="clear">clear</button>
+                <button class='controls' id="next-gen">next &#10073;&#10148;</button>
+            </div>
+        </div>
+        <div id="grid-container"></div>
+        <div class=left-ctn>
+            <div class="btn-container">
+                <p>Patterns</p>
+                <button class="controls" id="random">random</button>
+                <button class="controls" id="glider">glider</button>
+                <button class="controls" id="blinker">blinker</button>
+                <button class="controls" id="penta">pentadec</button>
+            </div>
+        </div>
+    </div>
+    <div class="lower-ctn">
+
+        <div class='dropdwn-ctn'>
+            <div class="dropdown">
+                <div id="dropdown-ctrls">
+                    <button id="dropdown-btn">Select grid size &#9660;</button>
+                    <div id="drpdwn" class="dropdown-content">
+                        <option class="opt" value="small">small</option>
+                        <option class="opt" value="medium">medium</option>
+                        <option class="opt" value="large">large</option>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='opn-modal-ctn'>
+            <button id='opn-modal'>Read the rules &#10063;</button>
+        </div>
+    </div>
+
+
+    <script src="main/patterns.js"></script>
+    <script src="main/dropDown.js"></script>
+    <script src="main/modal.js"></script>
+    <script src="main/gameOfLife.js"></script>
+
+
+</body>
+
+</html>
