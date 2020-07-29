@@ -16,45 +16,45 @@ function randomBtnHandler() {
     }
 }
 
+// Helper function to execute the specified pattern
+function fillPattern(rwAry, clAry) {
+    for (let i = 0; i < rwAry.length; i++) {
+        grid[rwAry[i]][clAry[i]] = 1
+    }
+}
+
+// Create glider pattern
 function gliderButtonHandler() {
     if (playing) {
         return
     }
     clearButtonHandler()
-    grid[10][12] = 1;
-    grid[11][13] = 1;
-    grid[12][11] = 1;
-    grid[12][12] = 1;
-    grid[12][13] = 1;
+    const rowAry = [1, 2, 3, 3, 3, 10, 11, 12, 12, 12]
+    const colAry = [2, 3, 1, 2, 3, 12, 13, 11, 12, 13]
+    fillPattern(rowAry, colAry);
     updateView()
 }
 
+// Create blinker pattern
 function blinkerButtonHandler() {
     if (playing) {
         return
     }
     clearButtonHandler()
-    //resetGrids()
-    grid[12][10] = 1
-    grid[12][11] = 1
-    grid[12][12] = 1
+    const rowAry = [5, 5, 5, 12, 12, 12]
+    const colAry = [10, 11, 12, 10, 11, 12]
+    fillPattern(rowAry, colAry);
     updateView()
 }
 
+// Create penta pattern
 function pentaButtonHandler() {
     if (playing) {
         return
     }
     clearButtonHandler()
-    grid[6][12] = 1;
-    grid[7][12] = 1;
-    grid[8][12] = 1;
-    grid[9][12] = 1;
-    grid[10][12] = 1;
-    grid[11][12] = 1;
-    grid[12][12] = 1;
-    grid[13][12] = 1;
-    grid[14][12] = 1;
-    grid[15][12] = 1;
+    const rowAry = [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    const colAry = [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19];
+    fillPattern(rowAry, colAry);
     updateView()
 }
