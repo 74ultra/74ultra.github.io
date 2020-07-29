@@ -29,6 +29,18 @@ function setupControlButtons() {
     const pentaButton = document.getElementById("penta");
     pentaButton.onclick = pentaButtonHandler;
 
+    // exploder
+    const exploderButton = document.getElementById("exploder");
+    exploderButton.onclick = exploderButtonHandler;
+
+    // spaceship
+    const spaceButton = document.getElementById("space");
+    spaceButton.onclick = spaceButtonHandler;
+
+    // tumbler
+    const tumblerButton = document.getElementById("tumbler");
+    tumblerButton.onclick = tumblerButtonHandler;
+
 }
 
 // Clear grid
