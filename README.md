@@ -1,1 +1,1 @@
-# 74ultra.github.io
+An example of Conway's Game of Life.
